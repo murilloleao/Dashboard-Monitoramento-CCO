@@ -1,4 +1,4 @@
-# 📊 Dashboard Executivo de Monitoramento CCO
+# 📊 Pipeline de Dados End-to-End: Monitoramento CCO & Logística
 [🇧🇷 Português](#-português) | [🇺🇸 English](#-english)
 
 ---
@@ -6,31 +6,30 @@
 ## 🇧🇷 Português
 
 ### 📝 Descrição do Projeto
-Este projeto é um estudo de caso real sobre a transição de processos operacionais manuais para a inteligência de dados (Business Intelligence) no Centro de Controle Operacional (CCO) da Torre Construções. 
+Este projeto demonstra a construção de um pipeline de dados completo (End-to-End) para o Centro de Controle Operacional (CCO) da Torre Construções. A solução nasce na automação da coleta de dados na operação (via JavaScript) e deságua em um Dashboard Executivo no Power BI para controle de produtividade, acompanhamento de SLAs e redução de custos.
 
-A solução centraliza dados de telemetria e logística para fornecer visibilidade em tempo real sobre a eficiência da frota pesada, cumprimento de metas e gestão de ativos.
+### 🖥️ Visualização do Dashboard
+
+**Tela 1: Painel de Monitoramento (SLA em Tempo Real)**
+<img width="1871" height="814" alt="registro_ligações_SLA" src="https://github.com/user-attachments/assets/7ca0f180-5d3b-402e-b361-a360582d4cf6" />
+
+
+**Tela 2: Resumo Operacional (Produtividade CDC & Horas Extras)**
+<img width="1209" height="683" alt="resumo_operacional" src="https://github.com/user-attachments/assets/421d3ce2-2405-48c7-8f94-c3c12009bf63" />
+
 
 ### ⚙️ Engenharia de Dados & Funcionalidades
-* **Processamento de Dados (ETL):** Tratamento intensivo de bases de dados heterogêneas utilizando o Power Query, realizando limpeza, pivotagem e modelagem de dados estruturados.
-* **Modelagem Avançada (DAX):** Criação de métricas de negócios customizadas e cálculos temporais complexos em DAX para rastrear o tempo de inatividade da frota e quebra de SLAs.
-* **Design de Dashboard (UX/UI):** Construção de uma interface executiva baseada em Gestão à Vista, permitindo que a liderança identifique gargalos operacionais e ofensores de custo em menos de 3 segundos.
+* **Automação na Ingestão (JavaScript/Apps Script):** Desenvolvimento de sistema de registro e formulários integrados, reduzindo o trabalho manual de digitação em até 60% e aplicando lógicas relacionais para travar dados incorretos na fonte.
+* **Processamento de Dados (ETL):** Tratamento de bases de dados mensais utilizando o Power Query, realizando limpeza, tratamento de erros, filtros de nulos e consolidação das tabelas (MAR, ABR, MAI, JUN).
+* **Modelagem e DAX Avançado:** Criação de Modelo Relacional (Star Schema) com tabela dimensional `dCalendario`. Desenvolvimento de métricas de negócios em DAX para cálculo de horas extras decimais e quebras de SLA.
 
 ### 📊 Impacto de Negócio
-* Eliminação completa de relatórios manuais diários, centralizando a verdade dos dados em uma única fonte confiável.
-* Redução de custos operacionais através da identificação imediata de tempos de parada excessivos e desvios de rota da frota.
+* Eliminação de relatórios manuais e centralização da operação em um pipeline 100% automatizado.
+* Identificação imediata de gargalos operacionais e controle rígido sobre custos de horas extras por motorista.
 
 ---
 
 ## 🇺🇸 English
 
 ### 📝 Project Description
-This project is a real-world case study on transitioning manual operational processes into data intelligence (Business Intelligence) within the Control Center (CCO) at Torre Construções.
-
-### ⚙️ Data Engineering & Features
-* **Data Processing (ETL):** Heavy processing of heterogeneous data sources using Power Query for data cleansing, reshaping, and structured modeling.
-* **Advanced Modeling (DAX):** Custom business metrics and complex time-intelligence calculations in DAX to track fleet downtime and SLA breaches.
-* **Dashboard Design (UX/UI):** Executive visual management interface, enabling leadership to detect operational bottlenecks and cost offenders in under 3 seconds.
-
-### 📊 Business Impact
-* Complete elimination of manual daily reports, unifying data into a single source of truth.
-* Reduction in operational costs by instantly identifying excessive downtime and fleet route deviations.
+An End-to-End Data Pipeline built for the Operational Control Center (CCO) at Torre Construções. This solution starts with automated data collection at the operational level (JavaScript/Apps Script), processes data through heavy ETL in Power Query, and flows into an Executive Power BI Dashboard focused on SLA tracking, driver productivity (Ton/h), and decimal overtime cost control.
