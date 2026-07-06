@@ -1,38 +1,36 @@
-# 📊 Dashboard Executivo e Sistema de Ocorrências - CCO
-
-## 🎯 O Desafio Operacional
-Na operação, o registro de ocorrências da frota tomava muito tempo com controles manuais e planilhas descentralizadas. Isso engessava a comunicação do Centro de Controle Operacional (CCO) e atrasava a tomada de decisão da Diretoria.
-
-## 🚀 A Solução e a Evolução do Projeto
-Para resolver esse problema, criei uma solução do zero, escalando a tecnologia conforme a operação exigia mais maturidade em dados:
-
-### 📦 V1 - O Início (MS Excel e VBA)
-O marco zero da automação. Para acabar com o controle no papel e erros de digitação, desenvolvi uma planilha com formulários em VBA. O operador digita a placa, e o sistema já puxa setor e motorista automaticamente, consolidando tudo numa base limpa.
-
-<img width="1910" height="990" alt="Excel 1" src="https://github.com/user-attachments/assets/2be66af9-40a7-474c-a0dd-37c320a0d59b" />
-<img width="1909" height="979" alt="Excel 2" src="https://github.com/user-attachments/assets/61cbb8df-a0de-4ceb-81b2-714bf40375a2" />
-
-### ☁️ V2 - A Nuvem (Google Sheets)
-Para permitir que múltiplos operadores do CCO alimentassem o sistema ao mesmo tempo e de lugares diferentes, migrei a lógica da base de dados para a nuvem.
-
-### 📈 V3 - Inteligência Executiva (Power BI)
-Com a base estruturada e rodando na nuvem, conectei o Power BI para consumir esses dados via ETL. Eliminei o trabalho braçal de montar relatórios no fim do mês e criei uma visão executiva limpa e interativa.
-
-<img width="1630" height="878" alt="Power BI 1" src="https://github.com/user-attachments/assets/e20f2445-61c5-403d-b490-a1e375bbe876" />
-<img width="1611" height="883" alt="Power BI 2" src="https://github.com/user-attachments/assets/d31f989c-e589-45d9-b681-7d687b793116" />
-
-
-
-## 🛠️ Tecnologias e Ferramentas Utilizadas
-* **Power BI & Power Query (ETL):** Tratamento pesado de dados (correção de anomalias de tempo, conversão para horas decimais reais) e UX Design (Bookmarks, pop-ups e botões).
-* **DAX:** Lógicas de negócio para cálculo de médias e criação de Tabela dCalendario.
-* **Excel, VBA e Google Sheets:** Criação da interface de lançamento e armazenamento em nuvem.
-
-## 📊 Principais Entregas e KPIs no Dashboard
-* **SLA de Atendimento:** Visão do percentual de ocorrências resolvidas no prazo.
-* **Top 5 Placas Ofensoras:** Ranking de veículos com maior tempo parado (foco em manutenção preventiva).
-* **Volume Diário de Paradas:** Análise de tendência operacional.
-* **Resumo Operacional:** Interface de tabela detalhada, com design minimalista.
+# 📊 Dashboard Executivo de Monitoramento CCO
+[🇧🇷 Português](#-português) | [🇺🇸 English](#-english)
 
 ---
-*Próximo passo técnico (Em andamento): Migração da base de planilhas para um Banco de Dados Relacional utilizando modelagem e consultas em SQL.*
+
+## 🇧🇷 Português
+
+### 📝 Descrição do Projeto
+Este projeto é um estudo de caso real sobre a transição de processos operacionais manuais para a inteligência de dados (Business Intelligence) no Centro de Controle Operacional (CCO) da Torre Construções. 
+
+A solução centraliza dados de telemetria e logística para fornecer visibilidade em tempo real sobre a eficiência da frota pesada, cumprimento de metas e gestão de ativos.
+
+### ⚙️ Engenharia de Dados & Funcionalidades
+* **Processamento de Dados (ETL):** Tratamento intensivo de bases de dados heterogêneas utilizando o Power Query, realizando limpeza, pivotagem e modelagem de dados estruturados.
+* **Modelagem Avançada (DAX):** Criação de métricas de negócios customizadas e cálculos temporais complexos em DAX para rastrear o tempo de inatividade da frota e quebra de SLAs.
+* **Design de Dashboard (UX/UI):** Construção de uma interface executiva baseada em Gestão à Vista, permitindo que a liderança identifique gargalos operacionais e ofensores de custo em menos de 3 segundos.
+
+### 📊 Impacto de Negócio
+* Eliminação completa de relatórios manuais diários, centralizando a verdade dos dados em uma única fonte confiável.
+* Redução de custos operacionais através da identificação imediata de tempos de parada excessivos e desvios de rota da frota.
+
+---
+
+## 🇺🇸 English
+
+### 📝 Project Description
+This project is a real-world case study on transitioning manual operational processes into data intelligence (Business Intelligence) within the Control Center (CCO) at Torre Construções.
+
+### ⚙️ Data Engineering & Features
+* **Data Processing (ETL):** Heavy processing of heterogeneous data sources using Power Query for data cleansing, reshaping, and structured modeling.
+* **Advanced Modeling (DAX):** Custom business metrics and complex time-intelligence calculations in DAX to track fleet downtime and SLA breaches.
+* **Dashboard Design (UX/UI):** Executive visual management interface, enabling leadership to detect operational bottlenecks and cost offenders in under 3 seconds.
+
+### 📊 Business Impact
+* Complete elimination of manual daily reports, unifying data into a single source of truth.
+* Reduction in operational costs by instantly identifying excessive downtime and fleet route deviations.
