@@ -8,14 +8,14 @@
 ### 📝 Descrição do Projeto
 Este projeto demonstra a construção de um pipeline de dados completo (End-to-End) para o Centro de Controle Operacional (CCO) da Torre Construções. A solução nasce na automação da coleta de dados na operação (via JavaScript) e deságua em um Dashboard Executivo no Power BI para controle de produtividade, acompanhamento de SLAs e redução de custos.
 
-### 🖥️ Visualização do Dashboard
+### 🖥️ Visualização do Dashboard (Prints Reais)
 
 **Tela 1: Painel de Monitoramento (SLA em Tempo Real)**
-<img width="1871" height="814" alt="registro_ligações_SLA" src="https://github.com/user-attachments/assets/7ca0f180-5d3b-402e-b361-a360582d4cf6" />
+<img width="1856" height="786" alt="registro_ligações_SLA" src="https://github.com/user-attachments/assets/9c5b47d0-4073-458d-8f6c-bff00113ac6c" />
 
 
 **Tela 2: Resumo Operacional (Produtividade CDC & Horas Extras)**
-<img width="1209" height="683" alt="resumo_operacional" src="https://github.com/user-attachments/assets/421d3ce2-2405-48c7-8f94-c3c12009bf63" />
+<img width="1209" height="683" alt="resumo_operacional" src="https://github.com/user-attachments/assets/e3ff36fd-6993-424c-9f19-d259ee369c9d" />
 
 
 ### ⚙️ Engenharia de Dados & Funcionalidades
