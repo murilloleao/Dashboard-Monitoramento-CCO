@@ -6,7 +6,7 @@
 ## 🇧🇷 Português
 
 ### 📝 Descrição do Projeto
-Este projeto demonstra a construção de um pipeline de dados completo (End-to-End) para o Centro de Controle Operacional (CCO) da Torre Construções. A solução nasce na automação da coleta de dados na operação (via JavaScript) e deságua em um Dashboard Executivo no Power BI para controle de produtividade, acompanhamento de SLAs e redução de custos.
+Este projeto demonstra a construção de um pipeline de dados completo (End-to-End) para o Centro de Controle Operacional (CCO). A solução nasce na automação da coleta de dados na operação (via JavaScript) e deságua em um Dashboard Executivo no Power BI para controle de produtividade, acompanhamento de SLAs e redução de custos.
 
 ### 🖥️ Visualização do Dashboard (Prints Reais)
 
@@ -32,4 +32,23 @@ Este projeto demonstra a construção de um pipeline de dados completo (End-to-E
 ## 🇺🇸 English
 
 ### 📝 Project Description
-An End-to-End Data Pipeline built for the Operational Control Center (CCO) at Torre Construções. This solution starts with automated data collection at the operational level (JavaScript/Apps Script), processes data through heavy ETL in Power Query, and flows into an Executive Power BI Dashboard focused on SLA tracking, driver productivity (Ton/h), and decimal overtime cost control.
+This project demonstrates the development of a complete End-to-End Data Pipeline for the Operational Control Center (CCO) at Torre Construções. The solution begins by automating data collection on the shop floor (via JavaScript) and culminates in an Executive Power BI Dashboard for productivity tracking, SLA monitoring, and cost reduction.
+
+### 🖥️ Dashboard Visualization (Real Screenshots)
+
+**Screen 1: Monitoring Panel (Real-Time SLA)**
+<img width="1856" height="786" alt="registro_ligações_SLA" src="https://github.com/user-attachments/assets/dbdbf317-efd8-4ac9-8b4d-dc13d0b95cff" />
+
+
+**Screen 2: Operational Summary (CDC Productivity & Overtime)**
+<img width="1209" height="683" alt="resumo_operacional" src="https://github.com/user-attachments/assets/150637f9-c149-4912-9868-d6fd7a3444d2" />
+
+
+### ⚙️ Data Engineering & Features
+* **Automated Data Ingestion (JavaScript/Apps Script):** Built an integrated logging and form system, reducing manual data-entry effort by up to 60% and implementing relational logic to prevent bad data at the source.
+* **Data Processing (ETL):** Handled monthly data sources using Power Query to perform data cleansing, error handling, null filtering, and table consolidation across multiple months (MAR, APR, MAY, JUN).
+* **Data Modeling & Advanced DAX:** Developed a relational Star Schema utilizing a custom `dCalendario` dimension table. Authored specialized DAX business metrics to calculate decimal overtime and track SLA breaches.
+
+### 📊 Business Impact
+* Complete elimination of manual reporting by shifting the operation to a 100% automated data pipeline.
+* Immediate identification of operational bottlenecks and strict control over driver overtime costs.
